@@ -1,0 +1,11 @@
+/home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/Word/IntSumReducer.java
+/home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/Chromo/ChromoPartitioner.java
+/home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/Chromo/FragmentCoverage.java
+/home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/FragmentCoverage.java
+/home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/OddEven.java
+/home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/WordCount.java
+/home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/Chromo/CoverageMapper.java
+/home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/Word/WordCount.java
+/home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/Word/TokenizerMapper.java
+/home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/App.java
+/home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/Chromo/IntSumReducer.java
