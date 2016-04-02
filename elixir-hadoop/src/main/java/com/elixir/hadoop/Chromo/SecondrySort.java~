@@ -7,7 +7,6 @@ import java.io.IOException;
 
 import org.apache.hadoop.io.WritableComparable;
 
-//need clarity
 public class SecondrySort {
 	public static class IntPair 
     implements WritableComparable<IntPair> {
