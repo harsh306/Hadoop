@@ -20,10 +20,12 @@ package com.elixir.hadoop.Chromo;
 import java.io.IOException;
 //import java.util.StringTokenizer;
 
+
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
+//import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
@@ -38,7 +40,7 @@ public class FragmentCoverage {
 	
 
   public static void main(String[] args) throws Exception {
-	  int r=1;
+	  
     Configuration conf = new Configuration();
     String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
     if (otherArgs.length < 2) {
@@ -51,13 +53,17 @@ public class FragmentCoverage {
     job.setMapperClass(CoverageMapper.class);
     job.setCombinerClass(IntSumReducer.class);
     job.setNumReduceTasks(5);
-     //r=job.getNumReduceTasks();
-   // job.setGroupingComparatorClass(SecondrSort.class);
+    job.setMapOutputKeyClass(com.elixir.hadoop.Chromo.SecondrySort.IntPair.class);
     //job.setSpeculativeExecution(true);
     job.setPartitionerClass(ChromoPartitioner.class);
+    job.setGroupingComparatorClass(com.elixir.hadoop.Chromo.SecondrySort.FirstGroupingComparator.class);
     job.setReducerClass(IntSumReducer.class);
+    
     job.setOutputKeyClass(Text.class);
+    
     job.setOutputValueClass(IntWritable.class);
+    //	job.setOutputFormatClass(Text.class);
+    
     for (int i = 0; i < otherArgs.length - 1; ++i) {
       FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
     }

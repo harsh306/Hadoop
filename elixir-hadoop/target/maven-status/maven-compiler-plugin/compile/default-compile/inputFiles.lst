@@ -8,4 +8,5 @@
 /home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/Word/WordCount.java
 /home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/Word/TokenizerMapper.java
 /home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/App.java
+/home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/Chromo/SecondrySort.java
 /home/hduser/elixir/code/elixir-hadoop/src/main/java/com/elixir/hadoop/Chromo/IntSumReducer.java
